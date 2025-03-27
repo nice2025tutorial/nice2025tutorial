@@ -1,0 +1,7 @@
+output/
+datasets/
+**/__pycache__/
+.ipynb_checkpoints/
+*.nir
+*.npy
+.venv/

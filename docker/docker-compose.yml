@@ -1,0 +1,14 @@
+services:
+  nice:
+    image: "nice2025tutorial/nice2025tutorial:latest"
+    stdin_open: true
+    tty: true
+    entrypoint: /bin/bash
+    network_mode: bridge
+    ports:
+      - "8888:8888"
+      - "8889:8889"
+    shm_size: "4gb"
+    working_dir: /root/nice-tutorial
+    volumes:
+      - ../:/root/nice-tutorial/toolchain
